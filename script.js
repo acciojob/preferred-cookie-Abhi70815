@@ -4,8 +4,8 @@ document.getElementById('form').addEventListener('submit',(e)=>{
     let fontcolor=document.getElementById('fontcolor').value;
     let fontsize= document.getElementById('fontsize').value;
    
-    localStorage.setItem("fontsize",fontsize);
-    localStorage.setItem("fontcolor",fontcolor);
+document.cookie = "fontcolor=" + fontcolor;
+	document.cookie= "fontsize="+ fontsize;
     body.style.fontSize=fontsize+"px";
     body.style.color=fontcolor;
 
